@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Title</title>
+		<meta charset="utf-8">
+		<script src="//api.html5media.info/1.1.8/html5media.min.js"></script>
+	</head>
+	<body>
+		<table cellspacing="1" cellpadding="5" border="1">
+			<tr>
+				<th>No.</th>
+				<th>Category</th>
+				<th>Name</th>
+				<th>Song</th>
+			</tr>
+			{{ range . }}
+			<tr><td>{{ .Number }}</td><td>{{ .Category }}</td><td>{{ .Name }}</td><td><audio src="{{ .Path }}" controls preload></audio></td></tr>
+			{{ end }}
+		</table>
+	</body>
+</html>
