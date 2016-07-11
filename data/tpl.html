@@ -14,7 +14,7 @@
 				<th>Song</th>
 			</tr>
 			{{ range . }}
-			<tr><td>{{ .Number }}</td><td>{{ .Category }}</td><td>{{ .Name }}</td><td><audio src="{{ .Path }}" controls preload></audio></td></tr>
+			<tr><td>{{ .Number }}</td><td>{{ .Category }}</td><td>{{ .Name }}</td><td><audio src="{{ .Path }}" controls preload="none"></audio></td></tr>
 			{{ end }}
 		</table>
 	</body>
