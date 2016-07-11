@@ -13,5 +13,5 @@ update: download
 	s3sync -r -md5 -acl public-read mp3 cbw.calledby.name/mp3
 	s3sync -md5 -acl public-read index.html cbw.calledby.name
 
-download: build
+download:
 	./download
